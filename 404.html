@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Page Not Found</title>
+<meta http-equiv="refresh" content="0; url=/index.html">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #0a1a3a; /* dark blue */
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background: #1e3a8a;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: background 0.2s ease;
+    }
+
+    button:hover {
+        background: #274bb5;
+    }
+</style>
+
+<script>
+    // Extra JS redirect for reliability
+    window.onload = () => {
+        window.location.href = "/index.html";
+    };
+</script>
+</head>
+
+<body>
+    <h1>Please go to the home page</h1>
+    <button onclick="window.location.href='/index.html'">Redirect</button>
+</body>
+</html>
